@@ -15,6 +15,7 @@ Returns: Either a) a string representation of a Boolean value if
          value if it was not.
 """
 
+
 def convert_bool_to_string(input_value):
     string_conversion = {True: "true", False: "false"}
 
@@ -24,7 +25,7 @@ def convert_bool_to_string(input_value):
     if isinstance(input_value, bool):
         return_value = string_conversion.get(input_value, input_value)
     else:
-       return_value = input_value
+        return_value = input_value
 
     return(return_value)
 
