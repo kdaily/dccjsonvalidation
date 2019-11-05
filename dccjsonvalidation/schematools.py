@@ -5,18 +5,18 @@ Program: schema_tools.py
 Purpose: Common functions used by validation or template generation programs.
 """
 
-"""
-Function: convert_bool_to_string
-Purpose: Convert a value from the Python Boolean representation (True/False)
-         into a lower case string representation (true/false).
-Arguments: A variable that might contain a Python Boolean value
-Returns: Either a) a string representation of a Boolean value if
-         the value passed in was a Python Boolean, or b) the original
-         value if it was not.
-"""
-
-
 def convert_bool_to_string(input_value):
+    """ Convert a value from boolean into a lower case string.
+
+    Arguments:
+        input_value: A variable that might contain a Python Boolean value
+
+    Returns: 
+        Either a) a string representation of a Boolean value if
+            the value passed in was a Python Boolean, or b) the original
+            value if it was not.
+    """
+
     string_conversion = {True: "true", False: "false"}
 
     # Make sure that the input value is a Boolean. Passing a string in
